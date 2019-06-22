@@ -6,6 +6,9 @@ function Nav() {
     return (
         <nav>
             <ul className="nav-links">
+                <Link className="navStyle" to='/'>
+                    <li>Home</li>
+                </Link>
                 <Link className="navStyle" to='/features/todo/TodoListContainer'>
                     <li>ToDo</li>
                 </Link>

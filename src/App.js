@@ -7,17 +7,23 @@ import CounterContainer from "./features/counter/CounterContainer";
 
 
 function App() {
-  return (
-      <Router>
-          <div className="App">
-              <Nav />
-              <Switch>
-                  <Route path="/features/todo" component={TodoListContainer} />
-                  <Route path="/features/counter" component={CounterContainer} />
-              </Switch>
-          </div>
-      </Router>
-  );
+    return (
+        <Router>
+            <div className="App">
+                <Nav />
+                <Switch>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/features/todo" component={TodoListContainer} />
+                    <Route path="/features/counter" component={CounterContainer} />
+                </Switch>
+            </div>
+        </Router>
+    );
 }
+
+const Home = () => (
+    <div>
+    </div>
+);
 
 export default App;
